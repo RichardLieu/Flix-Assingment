@@ -15,6 +15,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         // Do any additional setup after loading the view.
         print("Hello")
         
@@ -30,7 +34,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                  
                  self.movies = dataDictionary["results"] as! [[String:Any]]
                  
-        print(dataDictionary)
+                 self.tableView.reloadData()
+                 
+                 print(dataDictionary)
         // TODO: Get the array of movies
         // TODO: Store the movies in a property to use elsewhere
         // TODO: Reload your table view data
@@ -41,11 +47,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell
+        let cell = UITableViewCell()
+        
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
+        
+        cell.textLabel!.text = title
+        
+        return cell
     }
 
 
