@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2458A35128D3B14A009FD9AD /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458A35028D3B14A009FD9AD /* MovieCell.swift */; };
+		2458A35428D3B873009FD9AD /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2458A35328D3B873009FD9AD /* AlamofireImage */; };
 		248D289F28D14B5D000F42BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D289E28D14B5D000F42BE /* AppDelegate.swift */; };
 		248D28A128D14B5D000F42BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D28A028D14B5D000F42BE /* SceneDelegate.swift */; };
 		248D28A328D14B5D000F42BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D28A228D14B5D000F42BE /* ViewController.swift */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2458A35028D3B14A009FD9AD /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		248D289B28D14B5D000F42BE /* Flix Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flix Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		248D289E28D14B5D000F42BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		248D28A028D14B5D000F42BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2458A35428D3B873009FD9AD /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,7 @@
 				248D28A028D14B5D000F42BE /* SceneDelegate.swift */,
 				248D28A228D14B5D000F42BE /* ViewController.swift */,
 				248D28A428D14B5D000F42BE /* Main.storyboard */,
+				2458A35028D3B14A009FD9AD /* MovieCell.swift */,
 				248D28A728D14B5E000F42BE /* Assets.xcassets */,
 				248D28A928D14B5E000F42BE /* LaunchScreen.storyboard */,
 				248D28AC28D14B5E000F42BE /* Info.plist */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = "Flix Assignment";
+			packageProductDependencies = (
+				2458A35328D3B873009FD9AD /* AlamofireImage */,
+			);
 			productName = "Flix Assignment";
 			productReference = 248D289B28D14B5D000F42BE /* Flix Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 248D289228D14B5D000F42BE;
+			packageReferences = (
+				2458A35228D3B873009FD9AD /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 248D289C28D14B5D000F42BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			files = (
 				248D28A328D14B5D000F42BE /* ViewController.swift in Sources */,
 				248D289F28D14B5D000F42BE /* AppDelegate.swift in Sources */,
+				2458A35128D3B14A009FD9AD /* MovieCell.swift in Sources */,
 				248D28A128D14B5D000F42BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2458A35228D3B873009FD9AD /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2458A35328D3B873009FD9AD /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2458A35228D3B873009FD9AD /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 248D289328D14B5D000F42BE /* Project object */;
 }
